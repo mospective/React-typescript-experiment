@@ -2,6 +2,8 @@ import Header from './components/Header';
 import OldComponent2 from './components/OldComponent';
 import Counter from './components/Counter';
 import { List } from './components/List';
+import Arrays from './components/Arrays';
+import Interface from './components/Interface';
 import './App.css'
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
       </OldComponent2>
       <Counter />
       <List items={["one", "two", "three"]} render={(item: string) => <span className="gold">{item}</span>} />
+      <Arrays />
+      <Interface />
     </div>
   )
 }
